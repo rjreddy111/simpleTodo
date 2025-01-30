@@ -1,12 +1,19 @@
+import "react-native-get-random-values"
+
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+
+import { StyleSheet, Text, View,Button } from 'react-native';
+import {v4 as uuidv4} from "uuid"
 
 import Home from "./src/components/Home"
 
-export default function App() {
+
+const App=()=> {
+ 
   return (
     <View style={styles.container}>
-      <Home/>
+      <Home/> 
+     
     </View>
   );
 }
@@ -18,6 +25,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'flex-start',
     height:"100vh",
-    padding:20
+    padding:30,
+    paddingTop:40
+    
   },
 });
+
+
+export default App

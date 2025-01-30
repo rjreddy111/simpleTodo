@@ -1,3 +1,5 @@
+import "react-native-get-random-values";
+
 import { Component } from "react";
 import {View,Text, TextInput, Button, FlatList, TouchableOpacity} from "react-native"
 import {v4 as uuidv4} from "uuid";
@@ -35,7 +37,7 @@ class Home extends Component {
         else {
             const newTask = {id : uuidv4(), title :trimmedInputText}; 
             this.setState((prevState)=> ({
-                tasks:[...prevState.tasks,newTask], 
+                tasks:[newTask,...prevState.tasks], 
                 inputTask:""
             }))
         }

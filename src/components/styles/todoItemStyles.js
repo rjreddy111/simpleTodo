@@ -15,5 +15,11 @@ export default StyleSheet.create({
          display:"flex",flexDirection: "row" ,justifyContent: "space-between", padding: 10,
          borderBottomColor:"grey",
          borderBottomWidth:2
+    },
+    editButtonAdjust: {
+        display:"flex",
+        justifyContent:"center",
+        alignItems:"center"
     }
+
 })

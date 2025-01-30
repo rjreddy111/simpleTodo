@@ -15,21 +15,22 @@ export default StyleSheet.create({
 
     },
     todoContainer:{
-        height:"50%",
+        height:200,
         width:"100%",
-        backgroundColor:"", borderRadius:15,
-        padding:10,
+        borderRadius:15,
+        padding:15,
         display:"flex", 
         flexDirection:"column", 
         justifyContent:"space-between",
         borderWidth:2, 
         borderColor:"#07b7f7",
+        backgroundColor:"#ffffff",
       
     
-        shadowColor: "#7e8c91",
-        shadowOffset: { width: 4, height: 5 },
-        shadowOpacity: 0.4,
-        shadowRadius: 5,
+        shadowColor: "red",
+        shadowOffset: { width: 2, height: 10 },
+        shadowOpacity: 0.5,
+        shadowRadius: 10,
         elevation:5,
     
 
@@ -37,21 +38,24 @@ export default StyleSheet.create({
     heading: {
         fontSize:28,
         fontWeight:"bold",
-        alignSelf:"center"
+        alignSelf:"center",
+        color:"red"
     },
     inputContainer: {
         height:40,
         outLineStyle:"none"
     },
     buttonStyle: {
-        width:80,
+        width:90,
         height:35,
         borderRadius:5,
         backgroundColor:"blue",
         display:"flex", 
         justifyContent:"center",
         alignItems:"center",
-        borderColor:"none"
+        borderColor:"none",
+        padding:5
+
         
     },
     buttonTextColor: {
